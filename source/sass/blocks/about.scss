@@ -1,0 +1,44 @@
+.about {
+
+}
+
+.about__title {
+
+}
+
+.about__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.about__item {
+  &--flower {
+
+  }
+  &--money {
+
+  }
+  &--heart {
+
+  }
+  &--yarn {
+
+  }
+  &--rocket {
+
+  }
+  &--present {
+
+  }
+}
+
+.about__description {
+  margin: 0;
+
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  color: $black;
+}

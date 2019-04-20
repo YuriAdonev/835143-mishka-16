@@ -1,0 +1,38 @@
+.main-section {
+
+}
+
+.main-section__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 76px 35px 120px;
+  margin: 0;
+
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: $title;
+
+  background-image: url(../img/hero-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.main-section__btn {
+  display: block;
+
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: $white;
+  &--lamp {
+    background-color: $accent;
+  }
+  &--lego {
+    background-color: $accent-dark;
+  }
+}
