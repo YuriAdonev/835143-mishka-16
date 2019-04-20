@@ -1,4 +1,3 @@
-@import "utils/normalize";
 @import "utils/vars";
 @import "utils/fonts";
 
@@ -8,21 +7,17 @@ body {
   color: $text;
 }
 
-@import "blocks/btn";
 @import "blocks/title";
-@import "blocks/slider";
 @import "blocks/label";
 @import "blocks/page-header";
 @import "blocks/page-footer";
 @import "blocks/main-nav";
 @import "blocks/site-list";
-@import "blocks/page-main";
 @import "blocks/main-section";
 @import "blocks/offer";
 @import "blocks/about";
 @import "blocks/reviews";
 @import "blocks/contacts";
-@import "blocks/social";
 @import "blocks/copyright";
 @import "blocks/header";
 @import "blocks/page-title";
