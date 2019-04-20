@@ -4,8 +4,6 @@
   width: 260px;
 }
 
-.catalog-item__preview {}
-
 .catalog-item__image {
   display: block;
 }
@@ -35,13 +33,9 @@
   line-height: 30px;
 }
 
-.catalog-item__buy {}
-
 .catalog-item__price {
   font-size: 15px;
   line-height: 24px;
   font-weight: bold;
   color: $black;
 }
-
-.catalog-item__to-cart {}

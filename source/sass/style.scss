@@ -3,7 +3,7 @@
 @import "utils/fonts";
 
 body {
-  font-family: "opensans", Arial, sans-serif;
+  font-family: "opensans", "Arial", sans-serif;
   font-size: 15px;
   color: $text;
 }
@@ -12,7 +12,6 @@ body {
 @import "blocks/title";
 @import "blocks/slider";
 @import "blocks/label";
-
 @import "blocks/page-header";
 @import "blocks/page-footer";
 @import "blocks/main-nav";
