@@ -1,12 +1,6 @@
 @import "utils/vars";
 @import "utils/fonts";
-
-body {
-  font-family: "opensans", "Arial", sans-serif;
-  font-size: 15px;
-  color: $text;
-}
-
+@import "base/base";
 @import "blocks/title";
 @import "blocks/label";
 @import "blocks/page-header";
