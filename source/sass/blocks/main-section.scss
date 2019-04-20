@@ -1,6 +1,4 @@
-.main-section {
-
-}
+.main-section {}
 
 .main-section__title {
   display: flex;
@@ -29,9 +27,11 @@
   font-weight: bold;
   text-decoration: none;
   color: $white;
+
   &--lamp {
     background-color: $accent;
   }
+
   &--lego {
     background-color: $accent-dark;
   }

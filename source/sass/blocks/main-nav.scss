@@ -1,22 +1,12 @@
-.main-nav {
+.main-nav {}
 
-}
+.main-nav__toggle {}
 
-.main-nav__toggle {
+.main-nav__wrapper {}
 
-}
+.main-nav__list {}
 
-.main-nav__wrapper {
-
-}
-
-.main-nav__list {
-
-}
-
-.main-nav__info {
-
-}
+.main-nav__info {}
 
 .main-nav__link {
   display: block;
@@ -28,8 +18,8 @@
   font-weight: bold;
   text-decoration: none;
   color: $black;
-  &--search {
-  }
-  &--cart {
-  }
+
+  &--search {}
+
+  &--cart {}
 }
