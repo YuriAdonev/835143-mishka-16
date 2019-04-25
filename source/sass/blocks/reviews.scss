@@ -1,0 +1,24 @@
+.reviews__item {
+  margin: 0;
+  padding: 0;
+}
+
+.reviews__text {
+  margin: 0;
+
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.reviews__author-name {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  font-style: normal;
+  color: $black;
+}
+
+.reviews__author-nik {
+  font-size: 17px;
+  line-height: 30px;
+}
