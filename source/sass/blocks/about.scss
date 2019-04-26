@@ -1,69 +1,8 @@
-.about {
-  @media (min-width: $tablet) {
-    width: 670px;
-    margin: 0 auto;
-  }
-
-  @media (min-width: $desktop) {
-    width: 1050px;
-  }
-}
-
 .about__list {
   margin: 0;
   padding: 0;
 
   list-style: none;
-
-  @media (min-width: $tablet) {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-
-.about__item {
-  @media (min-width: $tablet) {
-    flex-shrink: 0;
-    align-items: center;
-
-    width: 50%;
-  }
-
-  &--flower {
-    @media (min-width: $tablet) {
-      order: 1;
-    }
-  }
-
-  &--money {
-    @media (min-width: $tablet) {
-      order: 3;
-    }
-  }
-
-  &--heart {
-    @media (min-width: $tablet) {
-      order: 5;
-    }
-  }
-
-  &--yarn {
-    @media (min-width: $tablet) {
-      order: 2;
-    }
-  }
-
-  &--rocket {
-    @media (min-width: $tablet) {
-      order: 4;
-    }
-  }
-
-  &--present {
-    @media (min-width: $tablet) {
-      order: 6;
-    }
-  }
 }
 
 .about__description {
@@ -73,8 +12,4 @@
   line-height: 20px;
   font-weight: bold;
   color: $black;
-
-  @media (min-width: $tablet) {
-    font-size: 20px;
-  }
 }
