@@ -1,11 +1,17 @@
 .catalog-item {
   margin-bottom: 30px;
 
-  width: 260px;
+  @media (min-width: $tablet) and (max-width: $desktop - 1) {
+    display: flex;
+  }
 }
 
 .catalog-item__image {
   display: block;
+
+  @media (min-width: $tablet) and (max-width: $desktop - 1) {
+    flex-shrink: 0;
+  }
 }
 
 .catalog-item__info {
@@ -13,6 +19,11 @@
 
   border: 1px solid $light-gray;
   border-top: none;
+
+  @media (min-width: $tablet) and (max-width: $desktop - 1) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .catalog-item__name {
@@ -31,6 +42,12 @@
 .catalog-item__description {
   font-size: 13px;
   line-height: 30px;
+}
+
+.catalog-item__buy {
+  @media (min-width: $tablet) and (max-width: $desktop - 1) {
+    margin-top: auto;
+  }
 }
 
 .catalog-item__price {

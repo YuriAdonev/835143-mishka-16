@@ -11,4 +11,15 @@
   padding: 0;
 
   list-style: none;
+
+  @media (min-width: $tablet) {
+    width: 670px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop) {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1050px;
+  }
 }
