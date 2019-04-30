@@ -9,4 +9,16 @@
   &--mini {
     font-size: 18px;
   }
+
+  @media (min-width: $tablet) {
+    margin-left: -2px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

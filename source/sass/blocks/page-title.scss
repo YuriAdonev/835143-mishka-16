@@ -3,7 +3,7 @@
   justify-content: center;
 
   margin: 0;
-  padding: 74px 25px 120px;
+  padding: 70px 0 76px;
 
   font-size: 27px;
   line-height: 30px;
@@ -12,7 +12,17 @@
 
   background-color: $gray;
 
-  &--inner {
-    padding: 74px 0;
+  @media (min-width: $tablet) {
+    padding: 96px 0 90px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 94px 0 120px;
+
+    font-size: 53px;
+    line-height: 57px;
   }
 }

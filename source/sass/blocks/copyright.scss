@@ -4,10 +4,38 @@
   align-items: center;
 
   height: 80px;
+
+  @media (min-width: $tablet) {
+    height: auto;
+    padding-top: 6px;
+  }
+}
+
+.copyright__link {
+  display: flex;
+  align-items: center;
+
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    .copyright__logo {
+      fill: #46c1ae;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    .copyright__logo {
+      fill: #46c1ae;
+    }
+  }
 }
 
 .copyright__text {
   margin-right: 30px;
+  margin-bottom: 5px;
 
   font-size: 19px;
   line-height: 18px;

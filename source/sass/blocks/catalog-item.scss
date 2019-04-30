@@ -1,26 +1,87 @@
 .catalog-item {
   margin-bottom: 30px;
 
-  width: 260px;
+  @media (min-width: $tablet) and (max-width: $desktop - 1) {
+    display: flex;
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop) {
+    flex-shrink: 0;
+    width: 316px;
+  }
 }
 
 .catalog-item__image {
   display: block;
+
+  @media (min-width: $tablet) and (max-width: $desktop - 1) {
+    flex-shrink: 0;
+  }
+
+  &--mobile {
+    @media (min-width: $tablet) {
+      display: none;
+    }
+  }
+
+  &--tablet {
+    display: none;
+
+    @media (min-width: $tablet) {
+      display: block;
+    }
+
+    @media (min-width: $desktop) {
+      display: none;
+    }
+  }
+
+  &--desktop {
+    display: none;
+
+    @media (min-width: $desktop) {
+      display: block;
+    }
+  }
 }
 
 .catalog-item__info {
-  padding: 30px 28px;
+  padding: 27px;
 
   border: 1px solid $light-gray;
-  border-top: none;
+
+  @media (min-width: $tablet) and (max-width: $desktop - 1) {
+    display: flex;
+    flex-direction: column;
+
+    width: 335px;
+    padding: 25px 32px 25px 27px;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 197px;
+    padding: 25px 32px 27px 25px;
+    box-sizing: border-box;
+  }
 }
 
 .catalog-item__name {
-  margin: 0;
+  margin: 0 0 5px;
+  box-sizing: border-box;
 
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .catalog-item__link {
@@ -29,8 +90,44 @@
 }
 
 .catalog-item__description {
+  display: block;
+
+  margin-bottom: 20px;
+
   font-size: 13px;
   line-height: 30px;
+
+  @media (min-width: $tablet) {
+    margin-top: 3px;
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0;
+    margin: 1px 0 10px;
+  }
+}
+
+.catalog-item__buy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 20px;
+
+  border-top: 1px solid $light-gray;
+
+  @media (min-width: $tablet) and (max-width: $desktop - 1) {
+    margin-top: auto;
+    margin-left: 5px;
+    padding: 24px 0 0 0;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 20px 0 0 0;
+    margin-top: auto;
+  }
 }
 
 .catalog-item__price {
@@ -38,4 +135,27 @@
   line-height: 24px;
   font-weight: bold;
   color: $black;
+
+  @media (min-width: $tablet) {
+    font-size: 17px;
+  }
+}
+
+.catalog-item__to-cart {
+  display: block;
+  width: 20px;
+  height: 19px;
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+
+  svg {
+    fill: #000000;
+    opacity: 0.2;
+  }
+
+  @media (min-width: $tablet) {
+    margin-bottom: 4px;
+  }
 }

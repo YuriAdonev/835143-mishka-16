@@ -1,5 +1,13 @@
 .catalog {
   margin: 30px 0 0;
+
+  @media (min-width: $tablet) {
+    margin-top: 68px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 111px;
+  }
 }
 
 .catalog__list {
@@ -7,8 +15,21 @@
   flex-direction: column;
   align-items: center;
 
-  margin: 0;
+  width: 260px;
+  margin: 0 auto;
   padding: 0;
 
   list-style: none;
+
+  @media (min-width: $tablet) {
+    width: 670px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 1050px;
+  }
 }

@@ -1,8 +1,183 @@
+.about {
+  margin-top: 34px;
+
+  &::before {
+    content: "";
+    display: block;
+
+    width: 100%;
+    height: 7px;
+    margin-bottom: 28px;
+
+    opacity: 0.3;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-position: 7px bottom;
+    background-size: contain;
+
+    @media (min-width: $tablet) {
+      height: 15px;
+      margin-bottom: 50px;
+
+      background-position: center center;
+      background-size: 771px 15px;
+    }
+
+    @media (min-width: $desktop) {
+      height: 23px;
+      margin-bottom: 60px;
+
+      background-position: 24px center;
+      background-size: 1050px 23px;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    margin-top: 53px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 1050px;
+    margin: 73px auto 0;
+  }
+}
+
+.about__wrapper {
+  width: 260px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    width: 670px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop) {
+    width: 1050px;
+    padding-left: 175px;
+    box-sizing: border-box;
+  }
+}
+
+.about__title {
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 49px;
+  }
+}
+
 .about__list {
   margin: 0;
   padding: 0;
 
   list-style: none;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop) {
+    width: 700px;
+  }
+}
+
+.about__item {
+  margin-bottom: 29px;
+
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet) {
+    flex-shrink: 0;
+    align-items: center;
+
+    width: 50%;
+    margin-bottom: 56px;
+  }
+
+  &--flower {
+    .about__icon {
+      padding-left: 8px;
+
+      @media (min-width: $tablet) {
+        padding-left: 10px;
+      }
+    }
+
+    @media (min-width: $tablet) {
+      order: 1;
+    }
+  }
+
+  &--money {
+    .about__icon {
+      @media (min-width: $tablet) {
+        padding-left: 2px;
+      }
+    }
+
+    @media (min-width: $tablet) {
+      order: 3;
+    }
+  }
+
+  &--heart {
+    .about__icon {
+      padding-left: 7px;
+      padding-top: 5px;
+
+      @media (min-width: $tablet) {
+        padding-left: 9px;
+        padding-top: 6px;
+      }
+    }
+
+    @media (min-width: $tablet) {
+      order: 5;
+    }
+  }
+
+  &--yarn {
+    .about__icon {
+      padding-left: 3px;
+      padding-top: 2px;
+    }
+
+    @media (min-width: $tablet) {
+      order: 2;
+    }
+  }
+
+  &--rocket {
+    .about__icon {
+      margin-left: -7px;
+      padding-top: 4px;
+    }
+
+    @media (min-width: $tablet) {
+      order: 4;
+    }
+  }
+
+  &--present {
+    .about__icon {
+      padding-left: 3px;
+      padding-top: 2px;
+    }
+
+    @media (min-width: $tablet) {
+      order: 6;
+    }
+  }
+}
+
+.about__icon {
+  height: 54px;
+  box-sizing: border-box;
+
+  svg {
+    fill: $accent;
+  }
 }
 
 .about__description {
@@ -12,4 +187,9 @@
   line-height: 20px;
   font-weight: bold;
   color: $black;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
