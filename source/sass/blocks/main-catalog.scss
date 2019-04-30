@@ -1,0 +1,112 @@
+.main-catalog {
+  position: relative;
+
+  @media (min-width: $tablet) {
+    display: flex;
+
+    width: 670px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop) {
+    width: 1050px;
+  }
+}
+
+.main-catalog__btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 103px;
+  padding: 0 27px;
+  box-sizing: border-box;
+
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: $white;
+
+  &:hover,
+  &:focus {
+    height: 108px;
+
+    .main-catalog__icon {
+      opacity: 0.7;
+    }
+  }
+
+  &:active {
+    .main-catalog__icon {
+      opacity: 0.3;
+    }
+  }
+
+  span {
+    width: 120px;
+    padding-bottom: 4px;
+  }
+
+  @media (min-width: $tablet) {
+    position: absolute;
+    bottom: 0;
+    flex-shrink: 0;
+
+    width: 50%;
+    height: 131px;
+    padding: 0 27px 10px 36px;
+
+    font-size: 20px;
+    line-height: 30px;
+
+    span {
+      padding-bottom: 5px;
+    }
+
+    &:hover,
+    &:focus {
+      height: 136px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    height: 136px;
+    padding-bottom: 16px;
+    padding-right: 25px;
+
+
+    &:hover,
+    &:focus {
+      height: 141px;
+    }
+  }
+
+  &--lamp {
+    left: 0;
+
+    background-color: $accent;
+  }
+
+  &--lego {
+    right: 0;
+
+    background-color: $accent-dark;
+
+    @media (min-width: $tablet) {
+      padding-right: 35px;
+    }
+
+    @media (min-width: $desktop) {
+      padding-right: 33px;
+    }
+  }
+}
+
+.main-catalog__icon {
+  width: 60px;
+  padding-top: 2px;
+
+  fill: #149080;
+  opacity: 0.5;
+}

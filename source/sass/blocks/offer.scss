@@ -1,19 +1,204 @@
+.offer {
+  position: relative;
+
+  margin-top: 26px;
+
+  @media (min-width: $tablet) {
+    margin-top: 32px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 106px;
+  }
+}
+
+.offer__wrapper {
+  width: 260px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    position: relative;
+
+    width: 670px;
+    min-height: 404px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    flex-direction: column;
+
+    width: 1050px;
+    min-height: auto;
+  }
+}
+
+.offer__head {
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet) {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop) {
+    justify-content: flex-start;
+
+    margin-top: auto;
+    margin-bottom: 49px;
+  }
+}
+
+.offer__title {
+  margin-bottom: 5px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop) {
+    order: 2;
+  }
+}
+
 .offer__label {
   font-size: 17px;
   line-height: 20px;
   font-weight: bold;
+
+  @media (min-width: $tablet) {
+    width: 128px;
+    margin-bottom: 4px;
+
+    line-height: 17px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop) {
+    order: 1;
+
+    margin-left: 19px;
+    margin-right: 28px;
+    margin-bottom: 8px;
+  }
+}
+
+.offer__content {
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+
+    width: 290px;
+    min-height: 412px;
+  }
+
+  @media (min-width: $desktop) {
+    min-height: 478px;
+    margin-left: 177px;
+  }
 }
 
 .offer__text {
+  margin: 0 0 17px;
+
   line-height: 24px;
+  color: $text;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 36px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 47px;
+  }
+}
+
+.offer__list {
+  width: 100%;
+  margin-bottom: 28px;
+
+  border-collapse: collapse;
+
+  td {
+    line-height: 38px;
+
+    border-bottom: 1px solid $light-gray;
+
+    @media (min-width: $desktop) {
+      line-height: 39px;
+    }
+  }
+}
+
+.offer__field {
+  width: 95px;
+}
+
+.offer__image {
+  &--mobile {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    @media (min-width: $tablet) {
+      display: none;
+    }
+  }
+
+  &--tablet {
+    display: none;
+
+    @media (min-width: $tablet) {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      display: block;
+    }
+
+    @media (min-width: $desktop) {
+      display: none;
+    }
+  }
+
+  &--desktop {
+    display: none;
+
+    @media (min-width: $desktop) {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      display: block;
+    }
+  }
 }
 
 .offer__price {
   display: block;
 
-  padding: 28px 0;
+  margin: 23px 0 27px;
 
   font-size: 17px;
   line-height: 24px;
   font-weight: bold;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    margin-top: auto;
+    margin-bottom: 34px;
+
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 35px;
+  }
 }

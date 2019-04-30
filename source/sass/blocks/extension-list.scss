@@ -1,0 +1,24 @@
+.extension-list {
+  margin-top: 19px;
+}
+
+.extension-list__link {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: $black;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:not(:last-child) {
+    margin-right: 62px;
+  }
+}
