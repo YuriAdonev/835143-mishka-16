@@ -16,9 +16,11 @@
     <nav class="main-nav">
       <div class="main-nav__wrapper">
         <a class="main-nav__logo">
-          <img src="img/logo-mobile.svg" width="86" height="35" alt="Mishka" class="main-nav__logo-image--mobile">
-          <img src="img/logo-tablet.svg" width="113" height="47" alt="Mishka" class="main-nav__logo-image--tablet">
-          <img src="img/logo-desktop.svg" width="149" height="73" alt="Mishka" class="main-nav__logo-image--desktop">
+          <picture>
+            <source media="(min-width:1150px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width:768px)" srcset="img/logo-tablet.svg">
+            <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Mishka">
+          </picture>
         </a>
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list site-list">
@@ -99,9 +101,11 @@
               <td class="offer__value">15 см</td>
             </tr>
           </table>
-          <img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки" class="offer__image offer__image--mobile">
-          <img src="img/triple-set-tablet@1x.jpg" width="333" height="404" alt="Вязаные корзинки" class="offer__image offer__image--tablet">
-          <img src="img/triple-set-desktop@1x.jpg" width="525" height="636" alt="Вязаные корзинки" class="offer__image offer__image--desktop">
+          <picture>
+            <source media="(min-width:1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+            <source media="(min-width:768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+            <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" width="260" height="315" alt="Вязаные корзинки" class="offer__image">
+          </picture>
           <span class="offer__price">Цена: 990 руб.</span>
           <button class="offer__btn btn" type="button">Заказать</button>
         </div>

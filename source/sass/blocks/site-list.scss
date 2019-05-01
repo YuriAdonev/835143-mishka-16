@@ -25,9 +25,21 @@
 }
 
 .site-list__item {
-  @media (min-width: $tablet) {
-    &:not(:last-child) {
+  &:not(:last-child) {
+    @media (min-width: $tablet) {
       margin-right: 36px;
+    }
+
+    @media (min-width: $desktop) {
+      margin-right: 34px;
+    }
+  }
+
+  &:first-child {
+    @media (min-width: $desktop) {
+      padding-right: 38px;
+
+      border-right: 1px solid $light-gray;
     }
   }
 
@@ -37,16 +49,6 @@
 
     padding-bottom: 4px;
     box-sizing: border-box;
-
-    &:not(:last-child) {
-      margin-right: 34px;
-    }
-
-    &:first-child {
-      padding-right: 38px;
-
-      border-right: 1px solid $light-gray;
-    }
   }
 }
 

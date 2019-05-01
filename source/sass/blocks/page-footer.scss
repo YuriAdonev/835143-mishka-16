@@ -31,24 +31,26 @@
 .page-footer__logo {
   display: none;
 
-  &:hover,
-  &:focus {
-    svg {
-      fill: #46c1ae;
+  &[href] {
+    &:hover,
+    &:focus {
+      svg {
+        fill: #46c1ae;
+      }
     }
-  }
 
-  &:active {
-    svg {
-      fill: #46c1ae;
-      opacity: 0.3;
+    &:active {
+      svg {
+        fill: #46c1ae;
+        opacity: 0.3;
+      }
     }
   }
 
   @media (min-width: $tablet) {
     display: block;
 
-    width: 183px;
+    margin-right: 82px;
     padding-bottom: 5px;
     padding-left: 2px;
   }
