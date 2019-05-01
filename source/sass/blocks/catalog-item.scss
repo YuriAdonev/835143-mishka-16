@@ -13,36 +13,17 @@
 }
 
 .catalog-item__image {
+  flex-shrink: 0;
   display: block;
 
-  @media (min-width: $tablet) and (max-width: $desktop - 1) {
-    flex-shrink: 0;
+  @media (min-width: $tablet) {
+    width: 334px;
+    height: 334px;
   }
 
-  &--mobile {
-    @media (min-width: $tablet) {
-      display: none;
-    }
-  }
-
-  &--tablet {
-    display: none;
-
-    @media (min-width: $tablet) {
-      display: block;
-    }
-
-    @media (min-width: $desktop) {
-      display: none;
-    }
-  }
-
-  &--desktop {
-    display: none;
-
-    @media (min-width: $desktop) {
-      display: block;
-    }
+  @media (min-width: $desktop) {
+    width: 316px;
+    height: 462px;
   }
 }
 
@@ -149,6 +130,8 @@
 
   background-color: transparent;
   border: none;
+  cursor: pointer;
+  outline: none;
 
   svg {
     fill: #000000;
