@@ -19,7 +19,7 @@
       height: 15px;
       margin-bottom: 50px;
 
-      background-position: center center;
+      background-position: 20px center;
       background-size: 771px 15px;
     }
 
@@ -92,7 +92,7 @@
     align-items: center;
 
     width: 50%;
-    margin-bottom: 56px;
+    margin-bottom: 57px;
   }
 
   &--flower {
@@ -185,6 +185,7 @@
 
   font-size: 17px;
   line-height: 20px;
+  letter-spacing: 0.1px;
   font-weight: bold;
   color: $black;
 

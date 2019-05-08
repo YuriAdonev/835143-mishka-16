@@ -1,24 +1,152 @@
+.reviews {
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  margin: 55px auto 0;
+
+  @media (min-width: $tablet) {
+    width: auto;
+    margin-top: 26px;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  @media (min-width: $desktop) {
+    width: 1050px;
+    margin: 32px auto 0;
+  }
+}
+
+.reviews__wrapper {
+  @media (min-width: $tablet) {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 670px;
+    margin: 76px auto 50px;
+  }
+
+  @media (min-width: $desktop) {
+    width: auto;
+    padding-left: 175px;
+    margin: 70px auto 94px;
+  }
+}
+
+.reviews__title {
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet) {
+    order: 1;
+    margin-bottom: 50px;
+  }
+}
+
+.reviews__list {
+  @media (min-width: $tablet) {
+    order: 3;
+  }
+}
+
 .reviews__item {
   margin: 0;
   padding: 0;
 }
 
 .reviews__text {
-  margin: 0;
+  margin: 0 0 25px;
 
   font-size: 15px;
   line-height: 30px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 58px;
+
+    font-size: 17px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 780px;
+    margin-bottom: 38px;
+  }
 }
 
 .reviews__author-name {
+  display: block;
+  margin-bottom: 4px;
+
   font-size: 17px;
   line-height: 24px;
+  letter-spacing: 0.1px;
   font-weight: bold;
   font-style: normal;
   color: $black;
+
+  @media (min-width: $tablet) {
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 17px;
+  }
 }
 
 .reviews__author-nik {
   font-size: 17px;
   line-height: 30px;
+}
+
+.reviews__nav {
+  display: flex;
+  margin-top: 29px;
+  margin-bottom: 38px;
+
+  @media (min-width: $tablet) {
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop) {
+    bottom: 4px;
+  }
+}
+
+.reviews__arrow {
+  width: 50%;
+  height: 52px;
+
+  font-size: 0;
+  color: transparent;
+
+  background-color: transparent;
+  border: 1px solid #ececec;
+
+  @media (min-width: $tablet) {
+    width: auto;
+    padding: 0 19px;
+
+    border: none;
+  }
+
+  &--next {
+    border-left: none;
+  }
+}
+
+.reviews__btn {
+  @media (min-width: $tablet) {
+    order: 2;
+    width: 175px;
+    margin-top: 3px;
+    margin-right: 1px;
+    letter-spacing: 0.1px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 10px;
+  }
 }
