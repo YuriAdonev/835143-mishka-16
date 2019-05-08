@@ -1,5 +1,5 @@
 .catalog-item {
-  margin-bottom: 30px;
+  margin-bottom: 29px;
 
   @media (min-width: $tablet) and (max-width: $desktop - 1) {
     display: flex;
@@ -28,7 +28,7 @@
 }
 
 .catalog-item__info {
-  padding: 27px;
+  padding: 26px 27px 27px;
 
   border: 1px solid $light-gray;
 
@@ -52,7 +52,7 @@
 }
 
 .catalog-item__name {
-  margin: 0 0 5px;
+  margin: 0 0 6px;
   box-sizing: border-box;
 
   font-size: 17px;
@@ -73,7 +73,7 @@
 .catalog-item__description {
   display: block;
 
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 
   font-size: 13px;
   line-height: 30px;
@@ -95,7 +95,7 @@
   justify-content: space-between;
   align-items: center;
 
-  padding-top: 20px;
+  padding-top: 22px;
 
   border-top: 1px solid $light-gray;
 

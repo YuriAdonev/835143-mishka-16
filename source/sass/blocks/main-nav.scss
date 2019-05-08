@@ -157,6 +157,26 @@
   text-decoration: none;
   color: $black;
 
+  @media (max-width: $tablet - 1px) {
+    border-bottom: 1px solid $light-gray;
+  }
+
+  @media (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+
+    height: 88px;
+    padding: 0 0 0 32px;
+    box-sizing: border-box;
+
+    border-left: 1px solid $light-gray;
+  }
+
+  @media (min-width: $desktop) {
+    letter-spacing: 0.1px;
+    padding-left: 31px;
+  }
+
   &:hover,
   &:focus {
     opacity: 0.6;
@@ -174,21 +194,6 @@
       fill: $accent;
       opacity: 0.3;
     }
-  }
-
-  @media (max-width: $tablet - 1px) {
-    border-bottom: 1px solid $light-gray;
-  }
-
-  @media (min-width: $tablet) {
-    display: flex;
-    align-items: center;
-
-    height: 88px;
-    padding: 0 0 0 32px;
-    box-sizing: border-box;
-
-    border-left: 1px solid $light-gray;
   }
 
   &--search {

@@ -13,7 +13,7 @@
 
   &::after {
     position: absolute;
-    bottom: -1px;
+    bottom: 0;
     left: 0;
 
     display: none;
@@ -22,8 +22,8 @@
 
     background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: repeat-x;
-    background-position: center bottom;
-    background-size: 768px;
+    background-position: center top;
+    background-size: 768px 25px;
     content: "";
 
     @media (min-width: $tablet) {
@@ -31,10 +31,10 @@
     }
 
     @media (min-width: $desktop) {
-      height: 35px;
+      height: 34px;
 
       background-position: center top;
-      background-size: 1250px;
+      background-size: 1250px 34px;
     }
   }
 
@@ -90,5 +90,6 @@
 
     font-size: 53px;
     line-height: 57px;
+    letter-spacing: 0;
   }
 }
