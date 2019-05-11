@@ -17,7 +17,7 @@
   </div>
 
   <header class="page-header">
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--no-script">
       <div class="main-nav__wrapper">
         <a class="main-nav__logo">
           <picture>
@@ -26,7 +26,7 @@
             <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Mishka">
           </picture>
         </a>
-        <button class="main-nav__toggle main-nav__toggle--no-script" type="button">Открыть меню</button>
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a href="catalog.html" class="site-list__link">Каталог товаров</a>
@@ -191,7 +191,7 @@
           <address class="contacts__address">г. Санкт-Петербург,<br>ул. Большая Конюшенная,<br>д. 19/8, офис 101</address>
         </div>
       </div>
-      <div class="contacts__map"></div>
+      <div class="contacts__map" id="map"></div>
       <a href="contact-form.html" class="contacts__btn btn">Напишите нам</a>
     </section>
 
@@ -265,6 +265,8 @@
     </div>
   </div>
 
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>

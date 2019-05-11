@@ -13,6 +13,30 @@
   @media (min-width: $desktop) {
     width: 1050px;
   }
+
+  &--no-script {
+    .main-nav__toggle {
+      display: none;
+    }
+
+    .main-nav__list {
+      display: block;
+    }
+
+    .main-nav__info {
+      display: block;
+    }
+  }
+
+  &--open {
+    .main-nav__list {
+      display: block;
+    }
+
+    .main-nav__info {
+      display: block;
+    }
+  }
 }
 
 .main-nav__wrapper {
@@ -74,17 +98,23 @@
   background-color: transparent;
   background-image: url("../img/icon-menu-open.svg");
   border: none;
+  outline: none;
 
   @media (min-width: $tablet) {
     display: none;
   }
 
-  &--no-script {
-    display: none;
+  &--open {
+    width: 21px;
+    height: 20px;
+
+    background-image: url("../img/icon-menu-close.svg");
   }
 }
 
 .main-nav__list {
+  display: none;
+
   @media (min-width: $tablet) {
     order: 3;
     display: flex;
@@ -96,6 +126,8 @@
 }
 
 .main-nav__info {
+  display: none;
+
   @media (max-width: $tablet - 1px) {
     width: 100%;
   }
