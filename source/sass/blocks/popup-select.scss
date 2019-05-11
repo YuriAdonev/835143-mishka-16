@@ -1,0 +1,42 @@
+.popup-select {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+input[type="radio"] + .popup-select__radio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 82px;
+  height: 52px;
+  box-sizing: border-box;
+
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
+  color: $text;
+  border: 2px solid rgba($text, 0.1);
+
+  @media (min-width: $tablet) {
+    width: 112px;
+  }
+}
+
+input[type="radio"]:checked:disabled + .popup-select__radio,
+input[type="radio"]:checked + .popup-select__radio {
+  border-color: $accent;
+}
+
+.popup-select__label:hover .popup-select__radio {
+  border-color: $text;
+}
+
+input[type="radio"]:active + .popup-select__radio,
+.popup-select__label:active .popup-select__radio {
+  border-color: $accent;
+}
+
+input[type="radio"]:disabled + .popup-select__radio {
+  border-color: rgba($text, 0.3);
+}

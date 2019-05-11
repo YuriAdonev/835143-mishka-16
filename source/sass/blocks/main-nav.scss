@@ -78,6 +78,10 @@
   @media (min-width: $tablet) {
     display: none;
   }
+
+  &--no-script {
+    display: none;
+  }
 }
 
 .main-nav__list {
@@ -179,7 +183,9 @@
 
   &:hover,
   &:focus {
-    opacity: 0.6;
+    span {
+      opacity: 0.6;
+    }
 
     .main-nav__icon {
       fill: $accent;
@@ -188,7 +194,9 @@
   }
 
   &:active {
-    opacity: 0.3;
+    span {
+      opacity: 0.3;
+    }
 
     .main-nav__icon {
       fill: $accent;

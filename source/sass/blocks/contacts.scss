@@ -121,6 +121,16 @@
   color: $text;
 
   border-bottom: 1px solid $accent;
+
+  &:hover,
+  &:focus {
+    color: $accent;
+  }
+
+  &:active {
+    color: $accent;
+    opacity: 0.3;
+  }
 }
 
 .contacts__address {

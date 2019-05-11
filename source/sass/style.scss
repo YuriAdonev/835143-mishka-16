@@ -1,6 +1,7 @@
 @import "utils/vars";
 @import "utils/fonts";
 @import "base/base";
+@import "base/input";
 @import "blocks/btn";
 @import "blocks/title";
 @import "blocks/label";
@@ -22,3 +23,8 @@
 @import "blocks/catalog";
 @import "blocks/catalog-item";
 @import "blocks/manufacture";
+@import "blocks/form";
+@import "blocks/form-footer";
+@import "blocks/fieldset";
+@import "blocks/popup";
+@import "blocks/popup-select";

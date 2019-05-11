@@ -124,12 +124,23 @@
 
   background-color: transparent;
   border: 1px solid #ececec;
+  cursor: pointer;
+  outline: none;
 
   @media (min-width: $tablet) {
     width: auto;
     padding: 0 19px;
 
     border: none;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 
   &--next {

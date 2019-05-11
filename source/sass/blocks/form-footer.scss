@@ -1,0 +1,48 @@
+.form-footer {
+  margin-bottom: 55px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 50px;
+  }
+}
+
+.form-footer__wrapper {
+  width: 260px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 670px;
+    margin: 14px auto 0;
+  }
+
+  @media (min-width: $desktop) {
+    width: 701px;
+    margin-top: 10px;
+  }
+}
+
+.form-footer__text {
+  margin: 16px 0 31px;
+
+  font-size: 14px;
+  line-height: 16px;
+
+  @media (min-width: $tablet) {
+    margin: 0 0 3px;
+
+    font-size: 17px;
+    line-height: 20px;
+  }
+}
+
+.form-footer__btn {
+  letter-spacing: 0;
+
+  @media (min-width: $tablet) {
+    order: -1;
+    width: 230px;
+  }
+}

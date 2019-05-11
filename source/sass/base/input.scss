@@ -1,0 +1,89 @@
+input[type="checkbox"],
+input[type="radio"] {
+  display: block;
+  width: 0;
+  height: 0;
+}
+
+.checkbox,
+.radio {
+  flex-shrink: 0;
+}
+
+input[type="checkbox"] + .checkbox {
+  display: block;
+  width: 40px;
+  height: 39px;
+
+  box-sizing: border-box;
+  border: 2px solid $text;
+
+  @media (min-width: $tablet) {
+    width: 54px;
+    height: 52px;
+  }
+}
+
+input[type="checkbox"]:checked:disabled + .checkbox,
+input[type="checkbox"]:checked + .checkbox {
+  background: url("../img/icon-tick.svg") no-repeat 50% 50%;
+
+  @media (max-width: $tablet - 1px) {
+    background-size: 22px 16px;
+  }
+}
+
+input[type="radio"] + .radio {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+
+  border-radius: 50%;
+  border: 2px solid $text;
+
+  @media (min-width: $tablet) {
+    width: 52px;
+    height: 53px;
+  }
+}
+
+input[type="radio"]:checked:disabled + .radio,
+input[type="radio"]:checked + .radio {
+  &::after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+
+    background-color: $accent;
+    border-radius: 50%;
+
+    @media (min-width: $tablet) {
+      width: 22px;
+      height: 22px;
+    }
+  }
+}
+
+input[type="checkbox"]:focus + .checkbox,
+input[type="radio"]:focus + .radio,
+.form__label:hover .checkbox,
+.form__label:hover .radio {
+  border-color: $accent;
+}
+
+input[type="checkbox"]:active + .checkbox,
+input[type="radio"]:active + .radio,
+.form__label:active .checkbox,
+.form__label:active .radio {
+  border-color: rgba($text, 0.3);
+}
+
+input[type="checkbox"]:disabled + .checkbox,
+input[type="radio"]:disabled + .radio {
+  border-color: rgba($text, 0.3);
+}

@@ -26,7 +26,7 @@
             <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Mishka">
           </picture>
         </a>
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <button class="main-nav__toggle main-nav__toggle--no-script" type="button">Открыть меню</button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a href="catalog.html" class="site-list__link">Каталог товаров</a>
@@ -242,6 +242,28 @@
       </div>
     </div>
   </footer>
+
+  <div class="popup popup-add-to-cart">
+    <div class="popup__wrapper">
+      <p class="popup__title">Добавить в корзину</p>
+      <p class="popup__text">Выберите размер:</p>
+      <div class="popup-select">
+        <label class="popup-select__label">
+          <input type="radio" name="size" checked>
+          <span class="popup-select__radio">S</span>
+        </label>
+        <label class="popup-select__label">
+          <input type="radio" name="size">
+          <span class="popup-select__radio">M</span>
+        </label>
+        <label class="popup-select__label">
+          <input type="radio" name="size">
+          <span class="popup-select__radio">L</span>
+        </label>
+      </div>
+      <a href="#" class="popup__btn btn">Добавить</a>
+    </div>
+  </div>
 
 </body>
 

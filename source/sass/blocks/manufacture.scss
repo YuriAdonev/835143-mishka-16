@@ -6,13 +6,28 @@
   @media (min-width: $tablet) {
     position: relative;
     width: 668px;
+    margin-bottom: 64px;
     padding-top: 455px;
   }
 
   @media (min-width: $desktop) {
     width: 1050px;
+    margin: 28px auto 105px;
     padding-top: 0;
     padding-left: 682px;
+  }
+
+  &:hover,
+  &:focus {
+    .manufacture__wrapper {
+      box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  &.active {
+    .manufacture__wrapper {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+    }
   }
 }
 
@@ -40,12 +55,16 @@
   font-weight: bold;
 
   @media (min-width: $tablet) {
+    padding: 33px 40px 0;
+
     font-size: 20px;
+    letter-spacing: 0.1px;
   }
 
   @media (min-width: $desktop) {
     flex-direction: column;
     align-items: flex-start;
+    padding: 40px 50px 0 77px;
   }
 
   svg {
@@ -55,8 +74,13 @@
 
     fill: $accent;
 
+    @media (min-width: $tablet) {
+      margin-right: 34px;
+    }
+
     @media (min-width: $desktop) {
-      margin-bottom: 15px;
+      margin-bottom: 22px;
+      margin-left: 1px;
     }
   }
 }
@@ -93,9 +117,31 @@
 
   background: transparent;
   border: none;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    .manufacture__icon {
+      @media (min-width: $desktop) {
+        width: 121px;
+        height: 92px;
+      }
+    }
+  }
+
+  &:active {
+    .manufacture__icon {
+      @media (min-width: $desktop) {
+        width: 81px;
+        height: 62px;
+      }
+    }
+  }
 }
 
 .manufacture__icon {
+  display: block;
+
   @media (min-width: $tablet) and (max-width: $desktop - 1px) {
     width: 102px;
     height: 78px;
@@ -109,12 +155,28 @@
   line-height: 24px;
 
   @media (min-width: $tablet) {
+    margin: 28px 40px 0;
+
     font-size: 15px;
-    line-height: 34px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 34px 40px 0 77px;
+
+    line-height: 30px;
   }
 }
 
 .manufacture__btn {
   margin: 0 34px 34px;
   width: auto;
+
+  @media (min-width: $tablet) {
+    margin: 32px 40px 45px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 46px 58px 0 78px;
+  }
 }

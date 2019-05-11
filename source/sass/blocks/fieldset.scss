@@ -1,0 +1,43 @@
+.fieldset {
+  width: 260px;
+  margin: 0 auto 31px;
+  padding: 0;
+
+  border: none;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    width: 670px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop) {
+    width: 1050px;
+  }
+
+  &--last {
+    margin-bottom: 0;
+  }
+}
+
+.fieldset__wrapper {
+  @media (min-width: $tablet) {
+    width: 500px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 700px;
+  }
+
+  &--flex {
+    @media (min-width: $tablet) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    @media (min-width: $desktop) {
+      width: 763px;
+    }
+  }
+}
