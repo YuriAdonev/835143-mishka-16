@@ -28,7 +28,6 @@ var linkOrder = document.querySelector(".offer__btn"),
     popupOrder = document.querySelector(".popup-add-to-cart"),
     popupInner = document.querySelector(".popup__wrapper");
 
-
 linkOrder.addEventListener("click", function (evt) {
   evt.preventDefault();
   popupOrder.classList.add("popup--show");
@@ -52,6 +51,7 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
+
 
 // Map
 

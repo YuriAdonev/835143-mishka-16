@@ -27,6 +27,7 @@ input[type="checkbox"] + .checkbox {
 input[type="checkbox"]:checked:disabled + .checkbox,
 input[type="checkbox"]:checked + .checkbox {
   background: url("../img/icon-tick.svg") no-repeat 50% 50%;
+  border-color: rgba($text, 0.3);
 
   @media (max-width: $tablet - 1px) {
     background-size: 22px 16px;
@@ -53,6 +54,8 @@ input[type="radio"] + .radio {
 
 input[type="radio"]:checked:disabled + .radio,
 input[type="radio"]:checked + .radio {
+  border-color: rgba($text, 0.3);
+
   &::after {
     content: "";
     display: block;
@@ -74,13 +77,6 @@ input[type="radio"]:focus + .radio,
 .form__label:hover .checkbox,
 .form__label:hover .radio {
   border-color: $accent;
-}
-
-input[type="checkbox"]:active + .checkbox,
-input[type="radio"]:active + .radio,
-.form__label:active .checkbox,
-.form__label:active .radio {
-  border-color: rgba($text, 0.3);
 }
 
 input[type="checkbox"]:disabled + .checkbox,

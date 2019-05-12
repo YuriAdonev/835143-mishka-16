@@ -28,6 +28,7 @@
 .catalog-item__image {
   flex-shrink: 0;
   display: block;
+  object-fit: cover;
 
   @media (min-width: $tablet) {
     width: 334px;
@@ -36,7 +37,8 @@
 
   @media (min-width: $desktop) {
     width: 316px;
-    height: 462px;
+    height: auto;
+    max-height: 462px;
   }
 }
 
@@ -65,6 +67,7 @@
 }
 
 .catalog-item__name {
+  display: block;
   margin: 0 0 6px;
   box-sizing: border-box;
 
@@ -81,6 +84,7 @@
 .catalog-item__link {
   text-decoration: none;
   color: $black;
+  white-space: normal;
 
   &:hover,
   &:focus {
