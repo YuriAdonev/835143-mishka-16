@@ -54,7 +54,7 @@ input[type="radio"] + .radio {
 
 input[type="radio"]:checked:disabled + .radio,
 input[type="radio"]:checked + .radio {
-  border-color: rgba($text, 0.3);
+  border-color: $text;
 
   &::after {
     content: "";
@@ -72,14 +72,12 @@ input[type="radio"]:checked + .radio {
   }
 }
 
-input[type="checkbox"]:focus + .checkbox,
-input[type="radio"]:focus + .radio,
 .form__label:hover .checkbox,
 .form__label:hover .radio {
   border-color: $accent;
 }
 
-input[type="checkbox"]:disabled + .checkbox,
-input[type="radio"]:disabled + .radio {
+input[type="checkbox"]:active + .checkbox,
+input[type="radio"]:active + .radio {
   border-color: rgba($text, 0.3);
 }
